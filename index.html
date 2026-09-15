@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebeca Rolim | Bolos & Doces</title>
+    <!-- Fonte Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO / NAVEGAÇÃO -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-main">REBECA ROLIM</span>
+                <span class="logo-sub">Bolos & Doces</span>
+            </a>
+            <nav class="nav">
+                <a href="#inicio">Início</a>
+                <a href="#pronta-entrega">Pronta-Entrega</a>
+                <a href="#encomendas">Encomendas & Festas</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#orcamento" class="btn-nav">Pedir Orçamento</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SEÇÃO HERO (INÍCIO) -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h1>Bolos que encantam,<br>sabor que apaixona.</h1>
+            <p>Encomendas exclusivas para suas festas e opções deliciosas a pronta-entrega todos os dias.</p>
+            <div class="hero-buttons">
+                <a href="#orcamento" class="btn btn-primary">Solicitar Orçamento de Festa</a>
+                <a href="#pronta-entrega" class="btn btn-secondary">Ver Pronta-Entrega Hoje</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO PRONTA-ENTREGA -->
+    <section id="pronta-entrega" class="section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pronta-Entrega Hoje</h2>
+                <p>Doces e bolos disponíveis para retirada imediata ou entrega rápida.</p>
+            </div>
+            
+            <div class="grid-cards">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-tag">Disponível</div>
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="Bolo de Chocolate">
+                    <div class="card-body">
+                        <h3>Bolo Vulcão Ninho com Nutella</h3>
+                        <p class="card-desc">Servindo 8 a 10 pessoas. Massa de cacau super fofinha.</p>
+                        <div class="card-footer">
+                            <span class="price">R$ 65,00</span>
+                            <button class="btn-whatsapp-sm" onclick="pedirProntaEntrega('Bolo Vulcão Ninho com Nutella')">Pedir Agora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-tag">Disponível</div>
+                    <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=600&q=80" alt="Bolo Red Velvet">
+                    <div class="card-body">
+                        <h3>Red Velvet Caseirinho</h3>
+                        <p class="card-desc">Servindo 4 a 6 pessoas. Cobertura tradicional de Cream Cheese.</p>
+                        <div class="card-footer">
+                            <span class="price">R$ 45,00</span>
+                            <button class="btn-whatsapp-sm" onclick="pedirProntaEntrega('Red Velvet Caseirinho')">Pedir Agora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-tag">Últimas Unidades</div>
+                    <img src="https://images.unsplash.com/photo-1557925923-cd4648e211a0?auto=format&fit=crop&w=600&q=80" alt="Caixa de Brigadeiros">
+                    <div class="card-body">
+                        <h3>Caixa de Brigadeiros Gourmet (12un)</h3>
+                        <p class="card-desc">Sabores sortidos: Belga ao leite, Pistache e Ninho.</p>
+                        <div class="card-footer">
+                            <span class="price">R$ 38,00</span>
+                            <button class="btn-whatsapp-sm" onclick="pedirProntaEntrega('Caixa de Brigadeiros Gourmet (12un)')">Pedir Agora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO ENCOMENDAS & FESTAS -->
+    <section id="encomendas" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Catálogo para Festas & Eventos</h2>
+                <p>Criamos o bolo e os doces dos seus sonhos sob medida.</p>
+            </div>
+
+            <div class="grid-categories">
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=600&q=80" alt="Bolos Decorados">
+                    <h3>Bolos Decorados</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Doces Finos">
+                    <h3>Doces Finos</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=600&q=80" alt="Kits Festa">
+                    <h3>Kits Festa Completos</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO FORMULÁRIO DE ORÇAMENTO -->
+    <section id="orcamento" class="section bg-light">
+        <div class="container container-small">
+            <div class="section-title">
+                <h2>Solicitar Orçamento de Festa</h2>
+                <p>Preencha os dados abaixo para receber uma proposta rápida via WhatsApp.</p>
+            </div>
+
+            <form id="formOrcamento" class="form-orcamento">
+                <div class="form-group">
+                    <label for="nome">Seu Nome *</label>
+                    <input type="text" id="nome" required placeholder="Digite seu nome completo">
+                </div>
+
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="data">Data do Evento *</label>
+                        <input type="date" id="data" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="convidados">Nº de Convidados *</label>
+                        <input type="number" id="convidados" required placeholder="Ex: 50">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo">O que você precisa?</label>
+                    <select id="tipo">
+                        <option value="Bolo Decorado">Apenas Bolo Decorado</option>
+                        <option value="Bolo + Doces">Bolo + Doces Finos</option>
+                        <option value="Kit Festa Completo">Kit Festa Completo</option>
+                        <option value="Doces e Sobremesas">Doces e Sobremesas</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="detalhes">Detalhes, Tema ou Preferências</label>
+                    <textarea id="detalhes" rows="4" placeholder="Ex: Tema jardim encantado, cores rosa e dourado, preferência por recheio de ninho com morango..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">Enviar Pedido de Orçamento</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div>
+                <h3>Rebeca Rolim Bolos e Doces</h3>
+                <p>Doces artesanais feitos com amor e carinho para o seu momento especial.</p>
+            </div>
+            <div>
+                <p>&copy; 2026 Rebeca Rolim. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+    <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20tirar%20uma%20dúvida." class="whatsapp-float" target="_blank" title="Fale pelo WhatsApp">
+        💬
+    </a>
+
+    <!-- JAVASCRIPT EXTERNO -->
+    <script src="script.js"></script>
+</body>
+</html>
